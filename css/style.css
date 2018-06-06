@@ -1,0 +1,60 @@
+#page-wrap {
+    width: 98%;
+    box-sizing: border-box;
+}
+
+.main-header {
+    background: linear-gradient(0deg, red, gold);
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 20px;
+}
+
+.top-floor {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+#YinYangexp {
+    flex: 1;
+    background-color: lightblue;
+}
+
+.headline {
+    padding-left: 10px;
+}
+
+
+#placeimage {
+    float:left;
+}
+
+#taichifam {
+    flex: 1;
+    background-color: lightgreen;
+    
+}
+
+#saferules {
+    flex: 1;
+    background-color: lightcoral;
+}
+
+#top-neighbor {
+    display: inline block;
+}
+
+#warmup {
+
+}
+
+#thebox {
+
+}
+
+#thesixteen {
+
+}
