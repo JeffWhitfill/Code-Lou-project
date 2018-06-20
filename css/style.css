@@ -3,9 +3,29 @@
     box-sizing: border-box;
 }
 
+.menu {
+    display: inline-block;
+    justify-content: left;
+}
+
+  
 .main-header {
     background: linear-gradient(0deg, red, gold);
     text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+a:link {
+    color: purple;
+}
+
+nav li {
+    margin-left: 20px;
 }
 
 .subtitle {
@@ -13,29 +33,30 @@
 }
 
 .top-floor {
+    margin-top: 15px;
     display: flex;
     justify-content: flex-start;
 }
 
-
 #YinYangexp {
     flex: 1;
     background-color: lightblue;
+    margin-right: 10px;
 }
 
 .headline {
     padding-left: 10px;
 }
 
-
 #placeimage {
     float:left;
+    z-index: 1;
 }
 
 #taichifam {
     flex: 1;
     background-color: lightgreen;
-    
+    margin-right: 10px;
 }
 
 #saferules {
@@ -47,14 +68,59 @@
     display: inline block;
 }
 
-#warmup {
+.secondfloor {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
 
+#warmup {
+    flex: 1;
+    background-color: lightblue;
+    margin-right: 10px;
+}
+
+#walk {
+    flex: 1;
+    background-color: lightgreen;
+}
+
+.thirdfloor {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 #thebox {
-
+    flex: 1;
+    background-color: lightblue;
+    margin-right: 10px;
 }
 
 #thesixteen {
+    flex: 1;
+    background-color: lightgreen;
+}
 
+#downloads {
+    display: flex;
+    padding-bottom: 0;
+}
+
+.videoex  {
+    padding-top: 0;
+    display: inline-flex;
+    margin-left: 15px;
+}
+
+/* Media Queries */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    button
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+   button 
 }
