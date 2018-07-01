@@ -19,29 +19,47 @@
  //   'Return to staning with legs shoukder-width apart, weight balanced between both legs'
 //]
 
-//var button = document.createElement("button");
-//button.innerHTML = "Show Instructions";
+//function boxReveal(buttonid, listclass) {//alert(buttonid+' '+listclass);
+//  var x = document.getElementsByClassName(listclass); 
+function boxReveal () {
+//    var i = 0;
+    var x= document.getElementById('itema');
+//   for (i=0; i < x.length; i += 1) {
+    if (x.style.display = "none") { 
+        x.style.display = "block";
+   }
+        document.getElementById('boxsteps').style.display = "none";
+}
 
-//var div = document.getElementsById("thebox")[0];
-//div.appendChild(button);
+function sixteenReveal () {
+    //    var i = 0;
+        var x= document.getElementById('itemb');
+    //   for (i=0; i < x.length; i += 1) {
+        if (x.style.display = "none") { 
+            x.style.display = "block";
+       }
+            document.getElementById('sixteenSteps').style.display = "none";
+    }
 
-//function recreate() {
-  // document.write("<h4>The Box Form by Dr.Paul Lam</h4>");
-    //var list = document.createElement('ol');
-   // for (var i=0; i < theboxArray.length; i += 1) {
-   //     create list item 
-   //    var item = document.createElement('li');
-  //      connect instruction to array item//
-    //    item.appendChild(document.createTextNode(theboxArray[i]));
-   ///      add new item to array//
-       // list.appendChild(item);
-    //   }
- // });
 
-  //function eraseText() {
-     /// document.getElementById('boxins').innerHTML ="";
-    // var node =  document.getElementById('boxins');  
-      //while (document.getElementById('boxins').hasChildNodes() ){
-        //node.removeChild(node.lastChild);
-      //}
-  //}
+///function sixteenReveal() {
+   // var x = document.getElementsByClassName("itemb"); 
+   // var j = 0;
+
+    //for (j=0; j < x.length; j += 1) {
+    //    x.style.display = "none";
+    //    x.style.display = "block";
+   // }   
+    //    button.style.display = "none";
+//}
+
+//function boxReveal(buttonid, listid)
+//{
+//if (document.getElementById('itema').classList.contains("hide"))
+//document.getElementById("itema").classList.add('show');
+//document.getElementById("boxsteps").style.display = "none";
+//document.getElementById("itema").classList.add('show');
+//document.getElementById("itema").classList.remove('hide');
+//if ( document.getElementById("itema").classList.contains('show') )
+//document.getElementById("boxsteps").classList.toggle('hide');
+//}
