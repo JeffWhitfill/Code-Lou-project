@@ -1,29 +1,21 @@
+/*  page container rule  */
+
 #page-wrap {
     box-sizing: border-box;
 }
 
+/*  Navigation rules  */
 .menu {
+    margin-left: 0;
+    padding-left: 0;
     top: 0;
     width: 100%;
     display: inline-block;
     background-color: black;
     color: goldenrod;
     position: relative;
+    flex-wrap: wrap;
     z-index: 1000;
-}
-
-  
-.main-header {
-    margin-left: 0;
-    width: 100%;
-    background: linear-gradient(0deg, red, gold);
-    text-align: center;
-    position: relative;
-    z-index: 1000;
-}
-
-.clearfix {
-    overflow: auto;
 }
 
 nav ul {
@@ -37,25 +29,42 @@ nav li {
     flex-wrap: wrap;
 }
 
+/*  Header and Title rules  */
+
+.main-header {
+    margin-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 30px;
+    background: linear-gradient(0deg, red, gold);
+    text-align: center;
+    position: relative;
+    z-index: 990;
+}
+
 .subtitle {
+    text-align: center;
     font-size: 20px;
 }
+
+/*  Containers on top row of content  */
 
 .top-floor {
     display: flex;
     justify-content: flex-start;
 }
 
+.clearfix {
+    overflow: auto;
+}
+
 #YinYangexp {
     position: relative;
-    padding-top: 10px;
+    margin-top: 10px;
     flex: 1;
     background-color: lightblue;
     margin-right: 10px;
-}
-
-.headline {
-    padding-left: 10px;
 }
 
 #placeimage {
@@ -65,7 +74,7 @@ nav li {
 
 #taichifam {
     position: relative;
-    padding-top: 10px;
+    margin-top: 10px;
     flex: 1;
     background-color: lightgreen;
     margin-right: 10px;
@@ -73,14 +82,12 @@ nav li {
 
 #saferules {
     position: relative;
-    padding-top: 10px;
+    margin-top: 10px;
     flex: 1;
     background-color: lightcoral;
 }
 
-#top-neighbor {
-    display: inline block;
-}
+/*  Containers on second row of content  */
 
 .secondfloor {
     padding-top: 10px;
@@ -90,15 +97,17 @@ nav li {
 
 #warmup {
     flex: 1;
-    background-color: lightblue;
+    background-color: lightslategray;
     margin-right: 10px;
 }
 
 #walk {
     flex: 1;
-    background-color: lightgreen;
+    background-color: lightsalmon;
     flex-wrap: wrap;
 }
+
+/*  Containers on bottom row of content  */
 
 .thirdfloor {
     padding-top: 10px;
@@ -108,29 +117,34 @@ nav li {
 
 #thebox {
     flex: 1;
-    background-color: lightblue;
+    background-color: lightskyblue;
     margin-right: 10px;
-}
-
-#thebox button {
-    display: none;
 }
 
 #thesixteen {
     flex: 1;
-    background-color: lightgreen;
+    background-color: lightgray;
     flex-wrap: wrap;
+}
+
+/*  buttons that will be hidden to all but small screens  */
+
+#thebox button {
+    display: none;
 }
 
 #thesixteen button {
     display: none;
 }
 
+/* closing content */
+
 footer {
     background-color: black;
     color: goldenrod;
-   
 }
+
+/*  videos illustrating content  */
 
 #downloads {
     display: flex;
@@ -143,19 +157,14 @@ footer {
     margin-left: 15px;
 }
 
-.hide {
-    display: none;
+a {
+    color: lightgoldenrodyellow;
 }
 
-.show {
-    display: block;
-}
 
 /* Media Queries */
 
 /* Smartphones (portrait and landscape) ----------- */
-/*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {*/
-   
    
     @media (max-width : 480px) {
     #itema {
@@ -203,7 +212,7 @@ footer {
         flex-wrap: wrap;
     }
 
-    #thesixteen ol {
+    #itemb {
         display:none;
     }
 
@@ -212,8 +221,3 @@ footer {
     }
 
 }
-
-/* iPads (portrait and landscape) ----------- 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  
-}*/
