@@ -1,3 +1,4 @@
+//code for the buttons seen on small screens//
 
 function boxReveal () {
     var x= document.getElementById('itema');
